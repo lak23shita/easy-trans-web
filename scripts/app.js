@@ -5,29 +5,47 @@ console.log('YOOOOOOOO.');
 
 // DOM Elements
 
-const darkButton = document.getElementById('dark');
-const lightButton = document.getElementById('light');
+const themeButton = document.getElementById('theme-toggle');
+const darkIcon = document.getElementById('t-dark');
+const lightIcon = document.getElementById('t-light');
 const body = document.body;
+let ct = 'light';
 
 
 // Apply the cached theme on reload
 
 const theme = localStorage.getItem('theme');
-const isSolar = localStorage.getItem('isSolar');
 
 if (theme) {
     body.classList.add(theme);
-    isSolar && body.classList.add('solar');
+    if (theme != ct) {
+        ct = theme;
+    }
 }
+
+setTheme(); 
 
 // Button Event Handlers for theme setting
 
-darkButton.onclick = () => {
-    body.classList.replace('light', 'dark');
-    localStorage.setItem('theme', 'dark');
-};
+themeButton.onclick = () => {
+    if (ct == 'light') {
+        body.classList.replace('light', 'dark');
+        localStorage.setItem('theme', 'dark');
+        ct = 'dark';
+    } else {
+        body.classList.replace('dark', 'light');
+        localStorage.setItem('theme', 'light');
+        ct = 'light'
+    }
+    setTheme();
+}
 
-lightButton.onclick = () => {
-    body.classList.replace('dark', 'light');
-    localStorage.setItem('theme', 'light');
-};
+function setTheme() {
+    if (ct == 'light') {
+        lightIcon.style.display = 'block';
+        darkIcon.style.display = 'none';
+    } else {
+        darkIcon.style.display = 'block';
+        lightIcon.style.display = 'none';
+    }
+}

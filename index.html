@@ -8,10 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#ffffff" />
-    <meta
-      name="description"
-      content="Detailing our app promotion"
-    />
+    <meta name="description" content="Detailing our app promotion" />
 
     <!-- Details about image -->
 
@@ -21,7 +18,7 @@
     <link rel="manifest" href="./assets/site.webmanifest">
 
     <!-- Styling data -->
-    
+
     <link rel="stylesheet" href="./styles/home.css">
 
     <!-- Basic details -->
@@ -36,10 +33,61 @@
 
     <noscript>You need to enable JavaScript to run this app.</noscript>
 
+    <!-- Navigation Pane -->
+
+    <nav class="navbar">
+        <div class="nav-darkner"></div>
+
+        <div class="nav-background"></div>
+
+        <ul class="navbar-nav">
+
+            <li class="nav-item" id="logo">
+                <a href="./index.html">EasyTrans</a>
+            </li>
+
+            <li class="nav-item has-dropdown">
+                <a id="fancy-anim" href="#">Features</a>
+                <ul class="dropdown">
+                    <li class="dropdown-item">
+                        <a href="#">Capablities</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#">Usage</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a id="fancy-anim" href="./about.html">About</a>
+            </li>
+
+            <li class="nav-item">
+                <button id="btn-get">Know More</button>
+            </li>
+
+            <li class="nav-item">
+                <a id="theme-toggle" href="#">
+                    <ion-icon id="t-dark" name="moon"></ion-icon>
+                    <ion-icon id="t-light" name="sunny"></ion-icon>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a id="language" href="#">English</a>
+            </li>
+        </ul>
+    </nav>
+
     <!-- Main details about our site -->
+
+    <main>
+        <div class="bg-video"></div>
+    </main>
 
     <!-- Java script files for ease -->
 
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
     <script src="./scripts/app.js"></script>
 
 </body>
