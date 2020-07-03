@@ -1,0 +1,41 @@
+/* Themes and Color Schemes */
+
+:root {
+    --gray0: #f8f8f8;
+    --gray1: #dbe1e8;
+    --blue0: #0601ff;
+    --blue1: #0084a5;
+    --green: #5FD588;
+    --light: #F2F2F2;
+    --dark: #0f0f0f;
+}
+
+.light {
+    --bg: var(--light);
+    --bg-nav: linear-gradient(to right, var(--gray0), var(--gray1));
+    --bg-dropdown: var(--blue0);
+    --text: var(--gray1);
+}
+  
+
+.dark {
+    --bg: var(--dark);
+    --bg-nav: linear-gradient(to right, var(--gray1), var(--gray0));
+    --bg-dropdown: var(--blue1);
+    --text: var(--gray0);
+}
+
+
+/* Global Styling */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+}
+
+/* Individual styling */
