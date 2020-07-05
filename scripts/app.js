@@ -5,47 +5,20 @@ console.log('YOOOOOOOO.');
 
 // DOM Elements
 
-const themeButton = document.getElementById('theme-toggle');
-const darkIcon = document.getElementById('t-dark');
-const lightIcon = document.getElementById('t-light');
-const body = document.body;
-let ct = 'light';
+/**
+ * Move down with ease
+ */
+$('#down').click(() => {
+    setTimeout(scrollToElement($('#sh')), 100);
+});
 
-
-// Apply the cached theme on reload
-
-const theme = localStorage.getItem('theme');
-
-if (theme) {
-    body.classList.add(theme);
-    if (theme != ct) {
-        ct = theme;
-    }
-}
-
-setTheme(); 
-
-// Button Event Handlers for theme setting
-
-themeButton.onclick = () => {
-    if (ct == 'light') {
-        body.classList.replace('light', 'dark');
-        localStorage.setItem('theme', 'dark');
-        ct = 'dark';
-    } else {
-        body.classList.replace('dark', 'light');
-        localStorage.setItem('theme', 'light');
-        ct = 'light'
-    }
-    setTheme();
-}
-
-function setTheme() {
-    if (ct == 'light') {
-        lightIcon.style.display = 'block';
-        darkIcon.style.display = 'none';
-    } else {
-        darkIcon.style.display = 'block';
-        lightIcon.style.display = 'none';
-    }
+/**
+ * Animates to a specific region of page
+ * @param {Object} ele Jquery element to manipulate 
+ */
+function scrollToElement(ele) {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: ele.offset().top - 100,
+        scrollLeft: ele.offset().left - 20,
+    }, 1000);
 }
