@@ -18,11 +18,13 @@
     <link rel="manifest" href="./assets/site.webmanifest">
 
     <!-- Styling data -->
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="./styles/home.css">
 
     <!-- Basic details -->
-
     <title>Easy Transportation</title>
 
 </head>
@@ -34,61 +36,189 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
 
     <!-- Navigation Pane -->
-
-    <nav class="navbar">
-        <div class="nav-darkner"></div>
-
-        <div class="nav-background"></div>
-
-        <ul class="navbar-nav">
-
-            <li class="nav-item" id="logo">
-                <a href="./index.html">EasyTrans</a>
-            </li>
-
-            <li class="nav-item has-dropdown">
-                <a id="fancy-anim" href="#">Features</a>
-                <ul class="dropdown">
-                    <li class="dropdown-item">
-                        <a href="#">Capablities</a>
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top">
+            <a class="navbar-brand" href="index.html">EasyTrans</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fas fa-bars" aria-hidden="true"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home" aria-hidden="true"></i> Home <span
+                                class="sr-only">(current)</span></a>
                     </li>
-                    <li class="dropdown-item">
-                        <a href="#">Usage</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html"><i class="fas fa-book-open" aria-hidden="true"></i>
+                            Story</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="tour.html"><i class="fas fa-sun" aria-hidden="true"></i> Tour</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-download"><i class="fa fa-android" aria-hidden="true"></i> Download
+                            APK</button>
                     </li>
                 </ul>
-            </li>
+            </div>
+        </nav>
+    </header>
 
-            <li class="nav-item">
-                <a id="fancy-anim" href="./about.html">About</a>
-            </li>
+    <!-- Main Panel -->
 
-            <li class="nav-item">
-                <button id="btn-get">Know More</button>
-            </li>
+    <div class="video">
+        <video width="100%" controls autoplay loop muted playsinline>
+            <source src="./assets/WEB.mp4" type="video/mp4">
+        </video>
+        <button class="arrow" id="down"><i class="fas fa-chevron-down fa-5x"></i></button>
+    </div>
 
-            <li class="nav-item">
-                <a id="theme-toggle" href="#">
-                    <ion-icon id="t-dark" name="moon"></ion-icon>
-                    <ion-icon id="t-light" name="sunny"></ion-icon>
-                </a>
-            </li>
+    <div id="sh">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="app"><i class="fa fa-rocket fa-5x" aria-hidden="true"></i></div>
+                <h1 class="heading">Easy Trans</h1>
+                <br>
+                <h3 class="big-heading">Enjoy your easy and feasible travelling again with easy trans app along with
+                    accurate precautions and safety during this pandemic </h3>
+                <br>
+                <button type="button" class="btn btn-dark btn-lg download-button" id="apple">
+                    <i class="fab fa-apple"></i>
+                    Download
+                </button>
 
-            <li class="nav-item">
-                <a id="language" href="#">English</a>
-            </li>
-        </ul>
-    </nav>
+                <button type="button" class="btn btn-outline-light btn-lg download-button" id="google">
+                    <i class="fab fa-google-play"></i>
+                    Download
+                </button>
+            </div>
 
-    <!-- Main details about our site -->
+            <div class="col-lg-6">
+                <img class="title-image" src="./assets/svg/pic.svg" alt="easy trans">
+            </div>
+        </div>
+    </div>
 
-    <main>
-        <div class="bg-video"></div>
-    </main>
+    <!-- Features -->
+    <div id="features" class="white-section">
+        <div class="row hey">
+            <h2 class="para">You will experience best features</h2>
+            <div class="feature-box col-lg-4">
+                <i class="icon fas fa-check-circle fa-4x"></i>
+                <h3 class="feature-title">Easy to use.</h3>
+                <p>Flawless and reliable service</p>
+            </div>
+            <div class="feature-box col col-lg-4">
+                <i class="icon fas fa-bullseye fa-4x"></i>
+                <h3 class="feature-title">Elite Clientele</h3>
+                <p>We have plenty to features to increase your convenience.</p>
+            </div>
+            <div class="feature-box col-lg-4">
+                <i class="icon fas fa-heart fa-4x"></i>
+                <h3 class="feature-title">Guaranteed to work.</h3>
+                <p>Find the love of your dog's life or your money back.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Section: Testimonials v.1 -->
+    <section class="text-center my-5 p-1">
+        <!-- Section heading -->
+        <h2 class="h1-responsive font-weight-bold my-5">Testimonials</h2>
+        <!-- Section description -->
+        <p class="dark-grey-text w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam
+            eum porro a pariatur veniam.</p>
+        <!-- Grid row -->
+        <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
+                <!--Card-->
+                <div class="card testimonial-card">
+                    <!--Background color-->
+                    <div class="card-up info-color"></div>
+                    <!--Avatar-->
+                    <div class="avatar mx-auto white">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg"
+                            class="rounded-circle img-fluid">
+                    </div>
+                    <div class="card-body">
+                        <!--Name-->
+                        <h4 class="font-weight-bold mb-4">John Doe</h4>
+                        <hr>
+                        <!--Quotation-->
+                        <p class="dark-grey-text mt-4"><i class="fas fa-quote-left pr-2"></i>Lorem ipsum dolor sit amet
+                            eos
+                            adipisci, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <!--Card-->
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
+                <!--Card-->
+                <div class="card testimonial-card">
+                    <!--Background color-->
+                    <div class="card-up blue-gradient">
+                    </div>
+                    <!--Avatar-->
+                    <div class="avatar mx-auto white">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg"
+                            class="rounded-circle img-fluid">
+                    </div>
+                    <div class="card-body">
+                        <!--Name-->
+                        <h4 class="font-weight-bold mb-4">Anna Aston</h4>
+                        <hr>
+                        <!--Quotation-->
+                        <p class="dark-grey-text mt-4"><i class="fas fa-quote-left pr-2"></i>Neque cupiditate assumenda
+                            in
+                            maiores repudiandae mollitia architecto.</p>
+                    </div>
+                </div>
+                <!--Card-->
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6">
+                <!--Card-->
+                <div class="card testimonial-card">
+                    <!--Background color-->
+                    <div class="card-up indigo"></div>
+                    <!--Avatar-->
+                    <div class="avatar mx-auto white">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg"
+                            class="rounded-circle img-fluid">
+                    </div>
+                    <div class="card-body">
+                        <!--Name-->
+                        <h4 class="font-weight-bold mb-4">Maria Kate</h4>
+                        <hr>
+                        <!--Quotation-->
+                        <p class="dark-grey-text mt-4"><i class="fas fa-quote-left pr-2"></i>Delectus impedit saepe
+                            officiis
+                            ab aliquam repellat rem unde ducimus.</p>
+                    </div>
+                </div>
+                <!--Card-->
+            </div>
+            <!--Grid column-->
+
+        </div>
+        <!-- Grid row -->
+
+    </section>
 
     <!-- Java script files for ease -->
-
-    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-    <script src="./scripts/app.js"></script>
+    <script src="https://use.fontawesome.com/38e6ec2bfb.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
 </body>
 

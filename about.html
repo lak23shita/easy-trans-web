@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Basic Meta Data -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="Detailing our app promotion" />
+
+    <!-- Details about image -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="manifest" href="./assets/site.webmanifest">
+
+    <!-- Styling data -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./styles/others.css">
+
+    <!-- Basic details -->
+    <title>About</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top">
+            <a class="navbar-brand" href="index.html">EasyTrans</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fas fa-bars" aria-hidden="true"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home" aria-hidden="true"></i> Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html"><i class="fas fa-book-open" aria-hidden="true"></i>
+                            Story</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="tour.html"><i class="fas fa-sun" aria-hidden="true"></i> Tour</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-download"><i class="fa fa-android" aria-hidden="true"></i> Download
+                            APK</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="bodybg container">
+        <div id="people-bg">
+            <div class="row justify-content-center p-2">
+                <video class="story-video col-8" src="./assets/WEB.mp4" controls></video>
+                <div class="col-4 align-self-center">
+                    <img id="people-logo" src="assets/svg/icon.svg" alt="Easytrans Logo">
+                    <h4 id="people-header"><strong>EasyTrans</strong> All In One Transport Companion App</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row m-3">
+            <div class="offset-1 col-6  align-self-center">
+                <div class="rounded-box-how">
+                    <div>
+                        <h1 class="row-header">How It Started</h1>
+                    </div>
+                    <div class="row-content d-none d-md-block">
+                        <p>Surely, this year 2020 has been a blast. Who must have thought that there would come a virus
+                            in near future that would have a potential to knock entire world down? Sadly that has
+                            arrived and has infected many.
+                            Thanks to <b>IBM HACKATHON</b> who organized this hackathon that enabled us to think
+                            creatively and productively.
+                            <b>EasyTrans</b> is a smart <b>Pocket Transport Companion App</b>. It allows you to book
+                            transport online facilating contactless services using <b>Online Payment</b> & <b>QR
+                                Scanning</b>
+                            as a strategy. It is integrated with realtime temperature monitoring services to facilitate
+                            <b>Temperature Control.</b></p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <img class="phone" src="./assets/svg/mode.svg" alt="EasyTrans">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="steps">
+                    <img src="./assets/svg/1.svg" alt="1">
+                    <p>Download the EasyTrans app and create an account</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="steps">
+                    <img src="./assets/svg/2.svg" alt="2">
+                    <p>Book your choice of transport online</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="steps">
+                    <img src="./assets/svg/3.svg" alt="3">
+                    <p>Done!</p>
+                </div>
+            </div>
+        </div>
+        <div class="row m-3">
+            <div class="offset-1 col-10 rounded-box-ideas justify-content-center">
+                <div>
+                    <h1 class="row-header">Ideas - Brainstorming</h1>
+                </div>
+                <div class="row-content d-none d-md-block">
+                    <ul>
+                        <li>Developing an App/Web such that it can be incorporated with QR scanning technology and
+                            online booking of buses and metros as per the availability, this barcode would be scanned by
+                            Conductors/ Drivers or Officers on the station. [Web and App Coding]</li>
+                        <li>QR Code will be used to identify individuals by linking their profile with it. Each QR code
+                            will also contain information about that particular Travel That is Destination, Source,
+                            Bus/Metro information.</li>
+                        <li>Offline to online ticket availability ratio could also be calculated based on taking public
+                            surveys over the app and visualizing the data. [Analytical Way]</li>
+                        <li>If a person’s temperature is found to be high (Positive), He/ She could be allocated seat
+                            under the quarantine zone (if exists). </li>
+                        <li>App maintaining a track of all passengers especially those who were detected (Positive) by
+                            the app. History includes place of boarding & arrival, and passengers nearby.
+                            [Security-(Integrated with Covid-19 Tracker)]</li>
+                        <li>Temperature sensing devices could be placed on the entrance/seats of buses and trains, to
+                            physically detect if a person is infected or having fever. [IOT]</li>
+                        <li>A Donation checkbox on the payment section, which can be used to generate revenue by
+                            authority or can be contributed to PM Cares Fund.</li>
+                        <li>Making it real time such that based on location data and how the people in that location are
+                            exposed or comfortable towards the usage of online apps and websites. As per that data, a
+                            ratio of offline to online ticket availability could be decided. [ML Way]</li>
+                        <li>Includes approval options as per the route based on different zones allocated by government,
+                            positive person’s permit approval to travel etc.</li>
+                        <li>Pre-booking of tickets with an option to cancel before a specific time to get a particular %
+                            of refund.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row m-3">
+            <div class="offset-1 col-10 rounded-box-solution justify-content-center">
+                <div class="col-12">
+                    <h1 class="row-header">Solution Description</h1>
+                </div>
+                <div class="col-12 row-content d-none d-md-block">
+                    <p>Developing an App/Web such that it can be incorporated with QR scanning technology and online
+                        booking of commonly used public transportation.</p>
+                    <ul>
+                        <li>Since, it is essential to keep the track of the people that have traveled in the past. This
+                            app would be designed keeping that part in mind. Along with the ease for the public, this
+                            app will be designed to help admins as well in maintaining this essential details of keeping
+                            track of passengers, real time scheduling based on availability and timings.</li>
+                        <li>Also, QR scanning incorporation will also be used to uniquely identify each passengers and
+                            this QR code will be linked to the user’s profile sharing all it’s travel details etc</li>
+                        <li>Using Bluetooth proximity to check if passengers are maintaining social distancing can also
+                            aid the process of fighting covid-19 and a safe travelling.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Java script files for ease -->
+    <script src="https://use.fontawesome.com/38e6ec2bfb.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
