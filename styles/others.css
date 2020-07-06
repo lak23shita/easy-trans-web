@@ -116,11 +116,11 @@ footer img {
 
 footer li {
     list-style: none;
-    font-size: 1.2em;
+    font-size: 1.4vw;
 }
 
 footer a {
-    font-size: 1.1em;
+    font-size: 1.4vw;
     color: white;
 }
   
@@ -133,12 +133,14 @@ footer a:hover {
 
 footer h1 {
     padding-bottom: 0.5rem;
-    font-size: 2.5em;
+    font-size: 2.5vw;
+    font-weight: 700;
 }
 
 footer h3 {
     padding-bottom: 0.5rem;
-    font-size: 2.5em;
+    font-size: 2.5vw;
+    font-weight: 700;
 }
 
 
@@ -157,7 +159,7 @@ footer img {
     height: auto;
 }
 footer .made {
-    background-color: rgb(11, 145, 255);
+    background-color: rgb(2, 2, 216);
     color: white;
     font-size: 4rem;
     filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, .7));
@@ -487,8 +489,25 @@ footer .made {
 }
 
 /*medium screen*/
-@media (max-width:765px) {
+@media (max-width:767px) {
 
+    /* Footer */
+    footer li a{
+        font-size: 2.4vw;
+    }
+    
+    footer h3 {
+        padding-bottom: 0.5rem;
+        font-size: 5vw;
+        font-weight: 700;
+    }
+
+    footer li b {
+        font-weight:600;
+        font-size: 3.1vw;
+    }
+
+    /* About */
     .rounded-box-how .row-header {
         font-weight: 700;
         font-size: 6vw;
@@ -505,7 +524,7 @@ footer .made {
         height: auto;
     }
 
-    /* About */
+    /* Tour */
     .jumbotron-custom {
         margin: 100px 50px 0px 50px;
         background-color: blue;
@@ -552,6 +571,16 @@ footer .made {
         margin-left: 6.5em;
     }
 
+    .slide_container button.right {
+        margin-left: 14.9em;
+    }
+
+}
+
+@media (max-width: 757px) {
+    footer li a{
+        font-size: 2.3vw;
+    }
 }
 
 @media (max-width: 700px) {
@@ -570,13 +599,22 @@ footer .made {
         width: 125%;
         height: auto;
     }
+}
 
-    
-
-
+@media (max-width: 656px) {
+    footer h3 {
+        font-size: 4.5vw;
+    }
+    footer li a{
+        font-size: 2.2vw;
+    }
 }
 
 @media (max-width: 575px) {
+    
+    footer li a{
+        font-size: 2.0vw;
+    }
     /* Tour */
     .jumbotron-custom {
         margin: 100px 40px 0px 40px;
@@ -605,6 +643,9 @@ footer .made {
 
 /*small screen*/
 @media (max-width: 469px) {
+    footer li a{
+        font-size: 1.9vw;
+    }
 
     .row-header {
         font-weight: 700;
