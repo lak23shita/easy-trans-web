@@ -28,18 +28,17 @@ function modifyOnClick(action, value) {
  * @param {Number} except Current slide 
  */
 function hideRest(except) {
-    for(let i=0; i<targs.length; i++) {
-        if (i == except) {
-            $(targs[i]).show();
-        } else {
-            $(targs[i]).hide();
-        }
-    }
+    targs.forEach(e => {
+        $(e).fadeOut();
+    })
+    setTimeout(() => { $(targs[except]).fadeIn() }, 400);
 }
 
 $(document).ready(() => {
     let pos = 0;
-    hideRest(pos);
+    targs.forEach((e, i) => {
+        i == pos ? $(e).show() : $(e).hide();
+    })
 
     $('.left').on('click', (e) => {
         pos = modifyOnClick('-', pos);

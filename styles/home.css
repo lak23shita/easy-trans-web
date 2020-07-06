@@ -75,12 +75,12 @@ body {
     font-weight: 500;
     padding: 10px;
     border-radius: 40px;
-    color: azure;
+    color: white;
     text-align: center;
 }
 
 .navbar .btn-download i {
-    color: azure;
+    color: white;
 }
 
 .navbar-collapse {
@@ -118,11 +118,11 @@ footer img {
 
 footer li {
     list-style: none;
-    font-size: 1.2em;
+    font-size: 1.4vw;
 }
 
 footer a {
-    font-size: 1.1em;
+    font-size: 1.4vw;
     color: white;
 }
   
@@ -135,12 +135,14 @@ footer a:hover {
 
 footer h1 {
     padding-bottom: 0.5rem;
-    font-size: 2.5em;
+    font-size: 2.5vw;
+    font-weight: 700;
 }
 
 footer h3 {
     padding-bottom: 0.5rem;
-    font-size: 2.5em;
+    font-size: 2.5vw;
+    font-weight: 700;
 }
 
 
@@ -165,6 +167,7 @@ footer .made {
     filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, .7));
 }
 
+
 /* Main Page */
 
 .affix {
@@ -176,8 +179,7 @@ footer .made {
 }
 
 .arrow {
-    background: none;
-    background-color: blue;
+    background: linear-gradient(blue,rgb(23, 151, 255));
     border-radius: 100px;
     border: none;
     outline: none;
@@ -212,80 +214,74 @@ footer .made {
 }
 
 #sh {
-    background-color: blue;
-    width: 100%;
-    height: 400;
-    /* border-radius: 25px;*/
+    background: linear-gradient(rgb(3, 3, 148),blue);
     text-align: center;
     border-radius: 40px;
-    padding: 20px;
+    padding: 50px;
     margin-top: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.bluestack {
+    background-color: rgb(2, 2, 216);
+    height: 2rem;
+    filter: drop-shadow(1px -2px 5px rgba(0, 0, 0, .7));
 }
 
 .big-heading {
-    padding-left: 90px;
-    word-wrap: break-word;
-    font-size: 30px;
+    font-size: 1.5em;
     color: white;
-    padding-top: 30px;
-}
-
-.app {
-    padding-top: 40px;
-    size: 30px;
-    color: white;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .heading {
-    padding-left: 100px;
-    font-weight: 40px;
-    font-size: 60px;
+    font-weight: 700;
     color: white;
-    padding-top: 50px;
+    font-size: 3em;
 }
 
 .title-image {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
+    width: 100%;
+} 
 
 /*Features*/
 
 #features {
-    /*padding: 7% 10%;*/
-    padding-bottom: 390px;
-    position: relative;
     background-color: blue;
-    text-align: center;
-    color: white;
-    width: 100%;
-    height: 300px;
     border-radius: 40px;
+    padding-top: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 3rem;
+    color: white;
+    text-align: center;
 }
 
-.feature-box {
-    padding-bottom: 300px;
+#features h3 {
+    font-weight: 700;
+    color: white;
+    font-size: 3vm;
 }
 
-.feature-title {
-    font-weight: 600;
-    font-size: 2vw;
+#features h2 {
+    font-weight: 700;
+    color: white;
+    font-size: 3em;
 }
 
 #features p {
-    font-weight: 20px;
-    font-size: 15px;
+    font-size: 1.3em;
 }
 
 .icon {
     color: white;
+    margin-top: 2rem;
     margin-bottom: 1rem;
-    text-align: center;
 }
 
 .icon:hover {
-    color: rgb(23, 151, 255);
+    color: rgb(2, 2, 216);
 }
 
 .para {
@@ -303,7 +299,7 @@ section h2, section p {
 }
 section h2 {
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 3em;
 }
 section p {
     font-size: 1.3em;
@@ -312,7 +308,7 @@ section p {
 .card, .card p {
     background-color: blue;
     color: white;
-    margin: 20px;
+    margin-top: 30px;
     padding-top: 20px;
     border-radius: 40px ;
 }
@@ -320,16 +316,18 @@ section p {
 /*FAQ*/
 
 .faq{
-     font-weight: 800;
-     font-size: 4vw;
+     font-weight: 700;
+     font-size: 3em;
      color:  blue;
-     text-transform: uppercase;
      padding: 20px;
+ }
+ .accordion-section li {
+    list-style: none;
  }
 
  .accordion-section .panel-default > .panel-heading {
      border: 0;
-     background: blue;
+     background: linear-gradient(blue,rgb(3, 3, 148));
      border-radius: 10px;
      padding: 0;
  }
@@ -361,9 +359,55 @@ section p {
  }
  
  .accordion-section .panel-default .panel-body {
-     font-size: 1rem;
+     font-size: 0.8rem;
  }
- 
+
+
+ /* Footer */
+ @media (max-width:767px) {
+    footer li a{
+        font-size: 2.4vw;
+    }
+    
+    footer h3 {
+        padding-bottom: 0.5rem;
+        font-size: 5vw;
+        font-weight: 700;
+    }
+
+    footer li b {
+        font-weight:600;
+        font-size: 3.1vw;
+    }
+ }
+
+ @media (max-width: 757px) {
+    footer li a{
+        font-size: 2.3vw;
+    }
+}
+
+@media (max-width: 656px) {
+    footer h3 {
+        font-size: 4.5vw;
+    }
+    footer li a{
+        font-size: 2.2vw;
+    }
+}
+
+@media (max-width: 575px) {
+    
+    footer li a{
+        font-size: 2.0vw;
+    }
+}
+
+@media (max-width: 469px) {
+    footer li a{
+        font-size: 1.9vw;
+    }
+}
 
 /*small screen*/
 @media (max-width:750px) {
