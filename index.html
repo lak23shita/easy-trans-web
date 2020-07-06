@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Meta Data -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="Detailing our app promotion" />
+
+    <!-- Details about image -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="manifest" href="./assets/site.webmanifest">
+
+    <!-- Styling data -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./styles/home.css">
+
+    <!-- Basic details -->
+    <title>Easy Transportation</title>
+
+</head>
+
+<body class="light">
+
+    <!-- Java script must be enabled for optimal performance -->
+
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <!-- Navigation Pane -->
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top">
+            <a class="navbar-brand" href="index.html">EasyTrans</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fas fa-bars" aria-hidden="true"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="fas fa-home" aria-hidden="true"></i> Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html"><i class="fas fa-book-open" aria-hidden="true"></i>
+                            Story</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="tour.html"><i class="fas fa-sun" aria-hidden="true"></i> Tour</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-download"><i class="fa fa-android" aria-hidden="true"></i> Download
+                            APK</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Panel -->
+
+    <div class="video">
+        <video width="100%" controls autoplay loop muted playsinline>
+            <source src="./assets/WEB.mp4" type="video/mp4">
+        </video>
+        <button class="arrow" id="down"><i class="fas fa-chevron-down fa-5x"></i></button>
+    </div>
+
+    <div id="sh">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="app"><i class="fa fa-rocket fa-5x" aria-hidden="true"></i></div>
+                <h1 class="heading">Easy Trans</h1>
+                <br>
+                <h3 class="big-heading">Enjoy your easy and feasible travelling again with easy trans app along with
+                    accurate precautions and safety during this pandemic </h3>
+                <br>
+                <button type="button" class="btn btn-dark btn-lg download-button" id="apple">
+                    <i class="fab fa-apple"></i>
+                    Download
+                </button>
+
+                <button type="button" class="btn btn-outline-light btn-lg download-button" id="google">
+                    <i class="fab fa-google-play"></i>
+                    Download
+                </button>
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <img class="title-image img-fluid" src="./assets/svg/pic.svg" alt="easy trans">
+            </div>
+        </div>
+    </div>
+
+    <!-- Features -->
+    <div id="features" class="white-section">
+        <div class="row hey">
+            <h2 class="para ">You will experience best features</h2>
+            <div class="feature-box col-lg-4 col-md-12 col-sm-12  ">
+                <i class="icon fas fa-check-circle fa-4x"></i>
+                <h3 class="feature-title">Easy to use.</h3>
+                <p>Flawless and reliable service</p>
+            </div>
+            <div class="feature-box col-lg-4 col-md-12 col-sm-12">
+                <i class="icon fas fa-bullseye fa-4x"></i>
+                <h3 class="feature-title">Elite Clientele</h3>
+                <p>We have plenty to features to increase your convenience.</p>
+            </div>
+            <div class="feature-box col-lg-4 col-md-12 col-sm-12">
+                <i class="icon fas fa-heart fa-4x"></i>
+                <h3 class="feature-title">Guaranteed to work.</h3>
+                <p>Find the love of your dog's life or your money back.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Section: Testimonials v.1 -->
+    <section class="text-center my-5 p-1">
+        <!-- Section heading -->
+        <h2 class="h1-responsive font-weight-bold my-5" id="test">Testimonials</h2>
+        
+        <!-- Grid row -->
+        <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <!--Card-->
+                <div class="card testimonial-card">
+                    <!--Background color-->
+                    <div class="card-up info-color"></div>
+                    <!--Avatar-->
+                    <div class="avatar mx-auto white">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg"
+                            class="rounded-circle img-fluid" style="width: 100px;">
+                    </div>
+                    <div class="card-body">
+                        <!--Name-->
+                        <h4 class="font-weight-bold mb-4">John Doe</h4>
+                        <hr>
+                        <!--Quotation-->
+                        <p class="dark-grey-text mt-4"><i class="fas fa-quote-left pr-2"></i>Flights,Public transport, Rental Services all covered by EasyTrans.Amazing service.My Company is consistently helping them to grow more.</p>
+                    </div>
+                </div>
+                <!--Card-->
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <!--Card-->
+                <div class="card testimonial-card">
+                    <!--Background color-->
+                    <div class="card-up blue-gradient">
+                    </div>
+                    <!--Avatar-->
+                    <div class="avatar mx-auto white">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg"
+                            class="rounded-circle img-fluid" style="width: 100px;">
+                    </div>
+                    <div class="card-body">
+                        <!--Name-->
+                        <h4 class="font-weight-bold mb-4">Anna Aston</h4>
+                        <hr>
+                        <!--Quotation-->
+                        <p class="dark-grey-text mt-4"><i class="fas fa-quote-left pr-2"></i>I have been working with them since years and these people have grown a lot in technology with temperaure sensing and bar code scanner.</p>
+                    </div>
+                </div>
+                <!--Card-->
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <!--Card-->
+                <div class="card testimonial-card">
+                    <!--Background color-->
+                    <div class="card-up indigo"></div>
+                    <!--Avatar-->
+                    <div class="avatar mx-auto white">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg"
+                            class="rounded-circle img-fluid" style="width: 100px;">
+                    </div>
+                    <div class="card-body">
+                        <!--Name-->
+                        <h4 class="font-weight-bold mb-4">Maria Kate</h4>
+                        <hr>
+                        <!--Quotation-->
+                        <p class="dark-grey-text mt-4"><i class="fas fa-quote-left pr-2"></i>Feasible and Flexible bookings along with complete safety and security of the people in this pandemic situation.</p>
+                    </div>
+                </div>
+                <!--Card-->
+            </div>
+            <!--Grid column-->
+
+        </div>
+        <!-- Grid row -->
+
+    </section>
+    <br>
+
+<!-- FAQ -->
+
+<section class="accordion-section clearfix mt-3" aria-label="Question Accordions">
+  <div class="container">
+  
+      <h2 class="faq mt-5">Frequently Asked Questions </h2>
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+          <div class="panel-heading p-3 mb-3" role="tab" id="heading0">
+            <h3 class="panel-title">
+              <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse0" aria-expanded="true" aria-controls="collapse0">
+                What are the benefits of Easy Trans?
+              </a>
+            </h3>
+          </div>
+          <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading0">
+            <div class="panel-body px-3 mb-4">
+              <p>With Solodev CMS, you and your visitors will benefit from a finely-tuned technology stack that drives the highest levels of site performance, speed and engagement - and contributes more to your bottom line. Our users fell in love with:</p>
+              <ul>
+                <li>Light speed deployment on the most secure and stable cloud infrastructure available on the market.</li>
+                <li>Scalability – pay for what you need today and add-on options as you grow.</li>
+                <li>All of the bells and whistles of other enterprise CMS options but without the design limitations - this CMS simply lets you realize your creative visions.</li>
+                <li>Amazing support backed by a team of Solodev pros – here when you need them.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="panel panel-default">
+          <div class="panel-heading p-3 mb-3" role="tab" id="heading1">
+            <h3 class="panel-title">
+              <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                How easy is it to travel using Easy Trans?
+              </a>
+            </h3>
+          </div>
+          <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+            <div class="panel-body px-3 mb-4">
+              <p>Building a website is extremely easy. With a working knowledge of HTML and CSS you will be able to have a site up and running in no time.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="panel panel-default">
+          <div class="panel-heading p-3 mb-3" role="tab" id="heading2">
+            <h3 class="panel-title">
+              <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                What are the safety norms for passengers?
+              </a>
+            </h3>
+          </div>
+          <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+            <div class="panel-body px-3 mb-4">
+              <p>Using Amazon AWS technology which is an industry leader for reliability you will be able to experience an uptime in the vicinity of 99.95%.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="panel panel-default">
+          <div class="panel-heading p-3 mb-3" role="tab" id="heading3">
+            <h3 class="panel-title">
+              <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                How to make payments using Easy Trans?
+              </a>
+            </h3>
+          </div>
+          <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+            <div class="panel-body px-3 mb-4">
+              <p>Yes, Solodev CMS is built to handle the needs of any size company. With our Multi-Site Management, you will be able to easily manage all of your websites.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Java script files for ease -->
+    <script src="https://use.fontawesome.com/38e6ec2bfb.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="./scripts/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* Themes and Color Schemes */
+
+:root {
+    --white: white;
+    --gray0: #f8f8f8;
+    --gray1: #dbe1e8;
+    --blue0: #0601ff;
+    --blue1: #0084a5;
+    --green: #5FD588;
+    --light: #F2F2F2;
+    --dark: #0f0f0f;
+}
+
+.light {
+    --bg: var(--light);
+    --bg-nav: var(--gray0);
+    --bg-dropdown: var(--blue0);
+    --border-color: var(--blue1);
+    --text: var(--white);
+}
+
+
+.dark {
+    --bg: var(--dark);
+    --bg-nav: var(--gray0);
+    --bg-dropdown: var(--blue1);
+    --border-color: var(--blue0);
+    --text: var(--white);
+}
+
+/* Global Styling */
+
+html,
+body {
+    height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Bootstrap */
+
+.navbar {
+    height: 6rem;
+    padding-left: 6em;
+    padding-right: 2em;
+    background-color: white;
+    color: blue;
+}
+
+.navbar i {
+    color: blue;
+}
+
+.nav-item a {
+    font-weight: 700;
+    margin-top: 5px;
+    margin-right: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.9em;
+    color: blue;
+}
+
+.navbar-brand {
+    font-size: xx-large;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: blue;
+}
+
+.navbar .btn-download {
+    background-color: blue;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 40px;
+    color: azure;
+    text-align: center;
+}
+
+.navbar .btn-download i {
+    color: azure;
+}
+
+.navbar-collapse {
+    background-color: white;
+    padding: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+/* Main Page */
+
+.affix {
+    background-color: #eee;
+    -webkit-transition: padding 0.2s ease-out;
+    -moz-transition: padding 0.2s ease-out;
+    -o-transition: padding 0.2s ease-out;
+    transition: padding 0.2s ease-out;
+}
+
+.arrow {
+    background: none;
+    border: none;
+    outline: none;
+    color: antiquewhite;
+    position: absolute;
+    z-index: 1;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 800ms;
+    animation: updown 800ms ease-in alternate infinite;
+}
+
+@keyframes updown {
+    from {
+        transform: translate(-50%, 0%);
+    }
+
+    to {
+        transform: translate(-50%, 10%);
+    }
+}
+
+.arrow:hover {
+    color: #333;
+}
+
+.video {
+    margin-top: 6rem;
+    
+    margin-left: 20;
+    margin-right: 20;
+}
+
+#sh {
+     background-color: blue;
+    width: 100%;
+    height: 400;
+    /* border-radius: 25px;*/
+    text-align: center;
+    border-radius: 25px;
+}
+
+.big-heading {
+    padding-left: 90px;
+    word-wrap: break-word;
+    font-size: 30px;
+    color: white;
+    padding-top: 30px;
+}
+
+.app {
+    padding-top: 40px;
+    size: 30px;
+    color: white;
+}
+
+.heading {
+    padding-left: 100px;
+    font-weight: 700;
+    font-size: 60px;
+    color: white;
+    padding-top: 50px;
+}
+
+.title-image {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/*Features*/
+
+.white-section {
+    background-color: #FC46AA
+}
+
+#features {
+    /*padding: 7% 10%;*/
+    padding-bottom: 390px;
+    position: relative;
+    background-color: rgb(255, 2, 120);
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    border-radius: 25px;
+}
+
+.feature-box {
+    padding: 10%;
+    padding-bottom: 300px;
+}
+
+.feature-title {
+    font-size: 20px;
+    font-weight: 20px;
+}
+
+#features p {
+    font-weight: 20px;
+    font-size: 15px;
+}
+
+.icon {
+    color: white;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.icon:hover {
+    color: #0000FF;
+}
+
+.para {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+    padding-top: 50px;
+    padding-left: 300px;
+}
+
+/*Testimonial*/
+.rounded-circle{
+    padding-top: 20px;
+}
+.testimonial-card{
+    background: repeating-linear-gradient(blue, rgb(255, 2, 120));
+}
+.test{
+    font-size: 200px;
+    font-weight: 700;
+}
+
+
+
+
+
+/*faq*/
+.faq{
+   font-weight: 800;
+    font-size: 1.5rem;
+    color:  #091f2f;
+    text-transform: uppercase;
+    padding: 20px;
+}
+.accordion-section .panel-default > .panel-heading {
+    border: 0;
+    background: #f4f4f4;
+    padding: 0;
+}
+
+.accordion-section .panel-default .panel-title a {
+    display: block;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+.accordion-section .panel-default .panel-title a:after {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-size: 3rem;
+    content: "\f106";
+    color: #1f7de2;
+    float: right;
+    margin-top: -12px;
+}
+
+
+.accordion-section .panel-default .panel-title a.collapsed:after {
+    content: "\f107";
+}
+
+.accordion-section .panel-default .panel-body {
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*small screen*/
+@media (max-width:750px) {
+    .arrow {
+        display: none;
+    }
+
+    #sh {
+        text-align: center;
+        height: 800px;
+    }
+
+    .heading {
+        padding-right: 70px;
+        font-size: 30px;
+    }
+
+    .big-heading {
+        padding-right: 60px;
+        font-size: 20px;
+    }
+    .para{
+        font-size: 30px;
+        text-align: center;
+        
+    }
+
+    .app {
+        display: none;
+    }
+
+    
+
+    #features {
+        height: 780px;
+    }
+
+    .feature-box {
+        padding: 30px;
+    }
+    .title-image{
+        width: 500px;
+        height: 500px;
+    }
+    .testimonial-card{
+        padding: 30px;
+    }
+}
+
+/*large screen*/
+@media (min-width: 750px) {
+    .arrow {
+        top: 90%;
+        transform: scale(0.8) translate(-65%);
+        animation: updown 800ms ease-in alternate infinite;
+    }
+    .feature-box {
+        padding: 20px;
+    }
+}
+
+/*Scrollbar*/
+* {
+    scrollbar-width: thin;
+    scrollbar-color: whitesmoke rgb(11, 145, 255);
+}
+
+*::-webkit-scrollbar {
+    width: 6px;
+    height: 3px;
+}
+
+*::-webkit-scrollbar-track {
+    background: whitesmoke;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(11, 145, 255);
+    border-radius: 3px;
+    border: 3px solid rgb(11, 145, 255);
+}
