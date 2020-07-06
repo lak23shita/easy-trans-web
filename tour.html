@@ -56,14 +56,14 @@
             </div>
           </nav>
     </header>
-    <div class="jumbotron">
+    <div class="jumbotron-custom">
         <div class="row m-3">
             <div class="tour offset-1 col-7 align-self-center">
                 <div class="row">
                     <div>
                         <h1 class="row-header">Discover Our Design</h1>
                     </div>
-                    <div class="row-content">
+                    <div class="row-content d-none d-md-block d-lg-block">
                         <p> 
                             <b>EasyTrans</b> is a smart <b>Pocket Transport Companion App</b>. It allows you to book transport online facilating contactless services using <b>Online Payment</b> & <b>QR Scanning</b>
                             as a strategy. It is integrated with realtime temperature monitoring services to facilitate <b>Temperature Control.</b></p>
@@ -71,12 +71,36 @@
                     </div>
                 </div>
                 <div class="row justify-content-start">
-                    <button class="btn"><i class="fa fa-apple fa-3x" aria-hidden="true"></i> App Store</button>
-                    <button class="btn"><i class="fa fa-android fa-3x" aria-hidden="true"></i> Google Play</button>
+                    <button class="btn">
+                        <div class="row">
+                            <i class="col-4 pr-5 fa fa-apple fa-3x" aria-hidden="true"></i>
+                            <div class="col-8 align-self-center d-none d-sm-block d-mg-block d-lg-block">
+                                <div class="row download"> 
+                                    Download on
+                                </div>
+                                <div class="row"> 
+                                    App Store  
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                    <button class="btn android">
+                        <div class="row">
+                            <i class="col-4 pr-4 fa fa-android fa-3x" aria-hidden="true"></i>
+                            <div class="col-8 align-self-center d-none d-sm-block d-mg-block d-lg-block">
+                                <div class="row download"> 
+                                    Get it on
+                                </div>
+                                <div class="row"> 
+                                    Google Play 
+                                </div>
+                            </div>
+                        </div>
+                    </button>
                 </div>
             </div>
             <div class="col-4">
-                <img class="phone" src="./assets/svg/mode.svg" alt="EasyTrans">
+                <img class="tour-img phone-tour" src="./assets/svg/mode.svg" alt="EasyTrans">
             </div>
         </div>
     </div>
@@ -92,7 +116,7 @@
                     </div>
                 </div>
                 <div class="picture offset-1 col-md-5">
-                    <img src="assets/svg/register.svg" />
+                    <img class="tour-img" src="assets/svg/register.svg" />
                 </div>
             </div>
             <div class="slide_2 row justify-content-center">
@@ -105,7 +129,7 @@
                     </div>
                 </div>
                 <div class="picture offset-1 col-md-5">
-                    <img src="assets/svg/mode.svg" />
+                    <img class="tour-img" src="assets/svg/mode.svg" />
                 </div>
             </div>
             <div class="slide_3 row justify-content-center">
@@ -118,7 +142,7 @@
                     </div>
                 </div>
                 <div class="picture offset-1 col-md-5">
-                    <img src="assets/svg/map.svg" />
+                    <img class="tour-img" src="assets/svg/map.svg" />
                 </div>
             </div>
             <div class="slide_4 row justify-content-center">
@@ -131,7 +155,7 @@
                     </div>
                 </div>
                 <div class="picture offset-1 col-md-5">
-                    <img src="assets/svg/payment.svg" />
+                    <img class="tour-img" src="assets/svg/payment.svg" />
                 </div>
             </div>
             <div class="buttons row">
@@ -141,7 +165,35 @@
                         aria-hidden="true"></i></button>
             </div>
         </div>
+        
     </div>
+
+    <footer>
+        <div class="row justify-content-center">
+            <div class="offset-1 col-2 align-self-center">
+                <ul>
+                    <h1>EasyTrans</h1>
+                   <li><a href="./index.html"><i class="fas fa-home pr-2" aria-hidden="true"></i>Home</a></li>
+                   <li><a href="./tour.html"><i class="fas fa-sun pr-2" aria-hidden="true"></i>Tour</a></li> 
+                   <li><a href="./about.html"><i class="fas fa-book-open pr-2" aria-hidden="true"></i>Story</a></li>
+                </ul>
+            </div>
+            <div class="offset-1 col-4">
+                <img src="./assets/svg/footer-05.svg" alt="footer">
+            </div>
+            <div class="col-4 align-self-center">
+                <ul>
+                   <h3>Contact Us</h3>
+                   <li><b>Phone:</b><br><a href="callto:888888888"><i class="fa fa-phone pr-2"></i>+91-88888888</a></li> 
+                   <li><b>Email:</b><br><a href="mailto:test@test.com"><i class="fa fa-envelope pr-2"></i>tech.support@easytrans.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="made row justify-content-center p-2">
+            <h5>Made with <i class="fa fa-heart fa-1x"></i> By Lakshita, Oishik, Khuzema</h5>
+        </div>
+    </footer>
+
     <script src="https://use.fontawesome.com/38e6ec2bfb.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>

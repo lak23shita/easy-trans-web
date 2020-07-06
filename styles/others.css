@@ -36,12 +36,15 @@
     padding-top: 100px;
 }
 
+/* Navbar Bootstrap */
+
 .navbar {
     height: 6rem;
-    padding-left: 6em;
-    padding-right: 2em;
+    padding-left: 3.5vw;
+    padding-right: 2.5vw;
     background-color: white;
     color: blue;
+    filter: drop-shadow(2px 3px 10px rgba(0, 0, 0, .7));
 }
 
 .navbar i {
@@ -85,9 +88,84 @@
     border-bottom-left-radius: 20px;
 }
 
+/* mouse over link */
+.navbar a:hover {
+    color: rgb(11, 145, 255);
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    font-size: 1.1em;
+}
+/* Footer */
+
+footer img {
+    transition: all 800ms;
+    animation: bottom 800ms ease-in alternate infinite;
+}
+
+@keyframes bottom {
+    from {
+        transform: translate(0%, 0%);
+    }
+
+    to {
+        transform: translate(0.5%, 1%);
+    }
+}
+
+footer li {
+    list-style: none;
+    font-size: 1.2em;
+}
+
+footer a {
+    font-size: 1.1em;
+    color: white;
+}
+  
+/* mouse over link */
+footer a:hover {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    
+}
+
+footer h1 {
+    padding-bottom: 0.5rem;
+    font-size: 2.5em;
+}
+
+footer h3 {
+    padding-bottom: 0.5rem;
+    font-size: 2.5em;
+}
+
+
+footer {
+    color: white;
+    background-color: blue;
+    width: 100%;
+    overflow-y: hidden;
+    margin-top: 4em;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    padding: 1rem 0rem 0rem 0rem;
+}
+footer img {
+    width: 100%;
+    height: auto;
+}
+footer .made {
+    background-color: rgb(11, 145, 255);
+    color: white;
+    font-size: 4rem;
+    filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, .7));
+}
+
 /* Tour Page */
 
-img {
+.tour-img {
     filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, .7));
     width: 70%;
     padding: 2vw;
@@ -128,16 +206,24 @@ img {
     color: #333;
 }
 
-.jumbotron {
+.jumbotron-custom {
+    margin: 100px 50px 0px 50px;
     background-color: blue;
-    height: 100vh;
+    height: 50vw;
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
+}
+
+.phone-tour {
+    filter: drop-shadow( 8px 8px 5px rgba(0, 0, 0, .7));
+    width: 90%;
+    height: auto;
 }
 
 .tour .row-header {
     font-weight: 700;
     color: white;
+    margin-top: 5rem;
     font-size: 4vw;
     text-align: center;
 }
@@ -153,12 +239,31 @@ img {
     color: blue;
     margin: 15px;
     font-size: 1.4em;
-    font-weight: 500;
+    font-weight: 700;
     letter-spacing: 0.1rem;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+/* .tour .btn {
+    background-color: white;
+    justify-content: center;
+    border-radius: 10px;
+    color: blue;
+    margin: 15px;
+    width: 17vw;
+    font-size: 1.4vw;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+} */
+
+.tour .btn .download {
+    margin-bottom: -5px;
+    font-size: 0.8vw;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
 }
 
 .tour .btn i {
@@ -191,10 +296,27 @@ img {
 
 /* Story Page */
 
+.btn-custom {
+    width: 70%;
+    padding: 2vw;
+    height: auto;
+    transition: all 800ms;
+    animation: bottom 800ms ease-in alternate infinite;
+}
+@keyframes bottom {
+    from {
+        transform: translate(0%, 0%);
+    }
+
+    to {
+        transform: translate(0.5%, 1%);
+    }
+}
+
 .story-video {
-    padding: 0.2vw;
+    padding: 5vw 0.2vw 5vw 0.2vw;
     border-radius: 20px;
-    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, .7));
+    filter: drop-shadow( 1px 3px 1px rgba(0, 0, 0, .7));
 }
 
 .row-header {
@@ -210,13 +332,12 @@ img {
 
 .rounded-box-how {
     background-color: rgb(23, 151, 255);
-    ;
     padding: 3vw;
     border-radius: 40px;
 }
 
 .rounded-box-ideas {
-    background-color: rgb(255, 2, 120);
+    background-color:rgb(255, 2, 120);
     padding: 3vw;
     border-radius: 40px;
 }
@@ -228,7 +349,7 @@ img {
 }
 
 .phone {
-    filter: drop-shadow(8px 8px 5px rgba(0, 0, 0, .7));
+    filter: drop-shadow( 3px 5px 5px rgba(0, 0, 0, .7));
     width: 90%;
     height: auto;
 }
@@ -251,23 +372,21 @@ img {
 
 #people-bg img {
     animation: none;
-    filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, .7));
-}
-
-#people-logo {
-    margin-left: 3.8vw;
+    filter: drop-shadow( 1px 3px 2px rgba(0, 0, 0, .7));
+    width: 85%;
+    height: auto;
 }
 
 #people-header {
     background-color: rgb(11, 145, 255);
     border-radius: 100px;
     padding: 1vw;
-    font-size: 1.5vw;
+    width: 12vw;
+    font-size: 1.8vw;
     text-align: center;
     font-weight: 300;
     color: azure;
 }
-
 #people-header strong {
     font-weight: 700;
 }
@@ -301,4 +420,217 @@ img {
     background-color: rgb(11, 145, 255);
     border-radius: 3px;
     border: 3px solid rgb(11, 145, 255);
+}
+
+/*large screen*/
+@media (max-width:985px) {
+
+    /* Tour */
+    .row-header {
+        font-weight: 700;
+        font-size: 4vw;
+        text-align: center;
+    }
+    
+    .rounded-box-how {
+        padding: 6vw 2vw 6vw 2vw;
+    }
+
+    .phone {
+        filter: none;
+        width: 150%;
+        height: auto;
+    }
+
+    #people-bg img {
+        filter: drop-shadow( 0.1px 1px 1px rgba(0, 0, 0, .7));
+        margin-left: 7vw;
+        margin-top: 10vw;
+        margin-bottom: 5vw;
+    }
+
+    /* About */
+    .jumbotron-custom {
+        margin: 100px 50px 0px 50px;
+        background-color: blue;
+        height: 55vw;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+
+    .phone-tour {
+        filter: none;
+        width: 110%;
+        height: auto;
+    }
+
+    .slide_container img {
+        width: 70%;
+        height: auto;
+    }
+    .slide_container .title h3 {
+        padding-bottom: 5px;
+        padding-top: 25px;
+        color: white;
+        letter-spacing: 0.1em;
+        font-weight: 400;
+        font-size: 1.5em;
+    }
+    
+    .slide_container .content h1 {
+    
+        color: white;
+        font-weight: 900;
+        font-size: 2em;
+    }
+
+}
+
+/*medium screen*/
+@media (max-width:765px) {
+
+    .rounded-box-how .row-header {
+        font-weight: 700;
+        font-size: 6vw;
+        text-align: center;
+    }
+    
+    .rounded-box-how {
+        padding: 6vw 2vw 6vw 2vw;
+    }
+
+    .phone {
+        filter: none;
+        width: 180%;
+        height: auto;
+    }
+
+    /* About */
+    .jumbotron-custom {
+        margin: 100px 50px 0px 50px;
+        background-color: blue;
+        padding-right: 1vw;
+        height: 50vw;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+
+    .tour .btn {
+        background-color: white;
+        border-radius: 10px;
+        color: blue;
+        margin: 15px;
+        font-size: 1em;
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .tour .btn .download {
+        margin-bottom: -5px;
+        font-size: 0.5em;
+        font-weight: 500;
+        letter-spacing: 0.1rem;
+    }
+
+    .tour .android {
+        padding-right: 1.2em;
+    }
+
+    .phone-tour {
+        filter: none;
+        width: 120%;
+        height: auto;
+    }
+
+    .slide_container img {
+        width: 40%;
+        height: auto;
+        margin-left: 6.5em;
+    }
+
+}
+
+@media (max-width: 700px) {
+    /* About */
+    .jumbotron-custom {
+        margin: 100px 50px 0px 50px;
+        padding-right: 1vw;
+        background-color: blue;
+        height: 55vw;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+
+    .phone-tour {
+        filter: none;
+        width: 125%;
+        height: auto;
+    }
+
+    
+
+
+}
+
+@media (max-width: 575px) {
+    /* Tour */
+    .jumbotron-custom {
+        margin: 100px 40px 0px 40px;
+        padding-right: 20px;
+    }
+
+    .tour button.android .row {
+        padding-right: 1em;
+    }
+
+    .tour .btn {
+        background-color: white;
+        border-radius: 10px;
+        color: blue;
+        margin: 15px;
+        width: 4em;  
+        padding-left: 3em; 
+    }
+
+    .phone-tour {
+        filter: none;
+        width: 140%;
+        height: auto;
+    }
+}
+
+/*small screen*/
+@media (max-width: 469px) {
+
+    .row-header {
+        font-weight: 700;
+        font-size: 6vw;
+        text-align: center;
+    }
+
+    .rounded-box-ideas, .rounded-box-solution {
+        padding: 10vw 2vw 10vw 2vw;
+    }
+
+    /* Tour */
+    .jumbotron-custom {
+        margin: 100px 40px 0px 40px;
+        padding-right: 20px;
+    }
+    .tour .btn {
+        position: absolute;
+    }
+    .tour button.android {
+        position: relative;
+        left: 5em;
+    }
+    .phone-tour {
+        filter: none;
+        width: 170%;
+        height: auto;
+    }
 }
